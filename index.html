@@ -1,87 +1,96 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <title>JavaScript for Those Wanting to Get Started with AngularJS</title>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript for Those Wanting to Get Started with AngularJS</title>
 
-    <meta name="description" content="JavaScript for Those Wanting to Get Started with AngularJS">
-    <meta name="author" content="Marek Matczak">
+        <meta name="description" content="JavaScript for Those Wanting to Get Started with AngularJS">
+        <meta name="author" content="Marek Matczak">
+        <meta name="author" content="Tomasz Szewcow">
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-    <link rel="stylesheet" href="base/reveal.js/css/reveal.css">
-    <link rel="stylesheet" href="base/reveal.js/css/theme/sky.css" id="theme">
+        <link rel="stylesheet" href="base/reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="base/reveal.js/css/theme/sky.css" id="theme">
 
-    <link rel="stylesheet" href="css/js4ng-beginners.css">
+        <link rel="stylesheet" href="css/js4ng-beginners.css">
 
-    <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="base/reveal.js/lib/css/zenburn.css">
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="base/reveal.js/lib/css/zenburn.css">
 
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'base/reveal.js/css/print/pdf.css' : 'base/reveal.js/css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match(/print-pdf/gi)
+                ? 'base/reveal.js/css/print/pdf.css'
+                : 'base/reveal.js/css/print/paper.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        </script>
 
-    <!--[if lt IE 9]>
-    <script src="base/reveal.js/lib/js/html5shiv.js"></script>
-    <![endif]-->
-</head>
+        <!--[if lt IE 9]> <script src="base/reveal.js/lib/js/html5shiv.js"></script> <![endif]-->
+    </head>
 
-<body>
+    <body>
 
-    <div class="reveal">
+        <div class="reveal">
 
-        <!-- Any section element inside of this container is displayed as a slide -->
-        <div class="slides">
-            <section>
-                <h1 class="no_upper">JavaScript*</h1>
-                <h4>* for Those Wanting to Get Started with <img class="middle" src="img/AngularJS-large.png" height="54" width="191"></h4>
-                <p>
-                    <small>Marek Matczak</small>
-                </p>
-				<p>
-					<small>Tomasz Szewców</small>
-				</p>
-            </section>
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h1 class="no_upper">JavaScript*</h1>
+                    <h4>* for Those Wanting to Get Started with
+                        <img class="middle" src="img/AngularJS-large.png" height="54" width="191"></h4>
+                    <p>
+                        <small>Marek Matczak</small>
+                    </p>
+                    <p>
+                        <small>Tomasz Szewców</small>
+                    </p>
+                </section>
 
-            <section>
-                <h2>Inspired by</h2>
-                <div>
-                    <img src="img/javascript_the_good_parts.jpg">
-                </div>
-                <div>
-                    <small>Picture taken from: <a href="http://frightanic.com/category/software-development/javascript/">http://frightanic.com/category/software-development/javascript/</a></small>
-                </div>
-            </section>
+                <section>
+                    <h2>Inspired by</h2>
+                    <div>
+                        <img src="img/javascript_the_good_parts.jpg">
+                    </div>
+                    <div>
+                        <small>Picture taken from:
+                            <a href="http://frightanic.com/category/software-development/javascript/">http://frightanic.com/category/software-development/javascript/</a>
+                        </small>
+                    </div>
+                </section>
 
-            <section>
-                <h2 class="no_upper">JavaScript...</h2>
-                <p class="fragment">...has nothing common with Java&nbsp;<small>* except for some key words</small>
-                </p>
-                <p class="fragment">...is more like <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">&ldquo;Lisp in C's clothing&rdquo;</q>&nbsp;<small>*Douglas Crockford</small>
-                </p>
-                <p class="fragment">...has objects, but is class-free</p>
-                <p class="fragment">...is of single-threaded nature</p>
-                <p class="fragment">...has asynchronous programming model</p>
-                <p class="fragment">...is object oriented and functional at the same time</p>
-            </section>
+                <section>
+                    <h2 class="no_upper">JavaScript...</h2>
+                    <p class="fragment">...has nothing common with Java&nbsp;<small>* except for some key words</small>
+                    </p>
+                    <p class="fragment">...is more like
+                        <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">&ldquo;Lisp in C's clothing&rdquo;</q>&nbsp;<small>*Douglas Crockford</small>
+                    </p>
+                    <p class="fragment">...has objects, but is class-free</p>
+                    <p class="fragment">...is of single-threaded nature</p>
+                    <p class="fragment">...has asynchronous programming model</p>
+                    <p class="fragment">...is object oriented and functional at the same time</p>
+                </section>
 
-            <section>
-                <h2>Declaring variables</h2>
-                <p>Always use <i>var</i> to declare variables</p>
-                <p>If you don't, they become <b>global</b> variables</p>
-                <div class="fragment">
-                    <p>Variable declarations get hoisted to the top of a function...</p>
-                    <p>...which may be confusing:</p>
-                    <pre><code data-trim class="javascript">
+                <section>
+                    <h2>Declaring variables</h2>
+                    <p>Always use
+                        <i>var</i>
+                        to declare variables</p>
+                    <p>If you don't, they become
+                        <b>global</b>
+                        variables</p>
+                    <div class="fragment">
+                        <p>Variable declarations get hoisted to the top of a function...</p>
+                        <p>...which may be confusing:</p>
+                        <pre><code data-trim class="javascript">
 var myVar = 'global';
 var myFunction = function () {
     console.log(myVar); // undefined
@@ -90,10 +99,10 @@ var myFunction = function () {
 };
 myFunction();
 					</code></pre>
-                </div>
-                <div class="fragment">
-                    <p>The above code behaves as if it looked like this:</p>
-                    <pre><code data-trim class="javascript">
+                    </div>
+                    <div class="fragment">
+                        <p>The above code behaves as if it looked like this:</p>
+                        <pre><code data-trim class="javascript">
 var myVar = 'global';
 var myFunction = function () {
     var myVar;
@@ -103,13 +112,13 @@ var myFunction = function () {
 };
 myFunction();
 					</code></pre>
-                </div>
-            </section>
+                    </div>
+                </section>
 
-            <section>
-                <h2>Single var pattern</h2>
-                <p>Eliminates logical errors caused by hoisting</p>
-                <pre><code data-trim class="javascript">
+                <section>
+                    <h2>Single var pattern</h2>
+                    <p>Eliminates logical errors caused by hoisting</p>
+                    <pre><code data-trim class="javascript">
 var a = 1,
     b = 2,
     sum = a + b,
@@ -118,12 +127,13 @@ var a = 1,
         return 'Hello!';
     };
 					</code></pre>
-            </section>
+                </section>
 
-            <section>
-                <h2>Objects</h2>
-                <p>can be created in a very convenient way with <i>object literals</i>:</p>
-                <pre><code data-trim class="javascript">
+                <section>
+                    <h2>Objects</h2>
+                    <p>can be created in a very convenient way with
+                        <i>object literals</i>:</p>
+                    <pre><code data-trim class="javascript">
 var emptyObject = {},
     person = {
       firstName : 'John',
@@ -131,11 +141,11 @@ var emptyObject = {},
       age : 30
     };
 					</code></pre>
-            </section>
-            <section>
-                <h2>Objects</h2>
-                <p>Values' retrieval</p>
-                <pre><code data-trim class="javascript">
+                </section>
+                <section>
+                    <h2>Objects</h2>
+                    <p>Values' retrieval</p>
+                    <pre><code data-trim class="javascript">
 var emptyObject = {},
     person = {
         firstName: 'John',
@@ -151,11 +161,11 @@ salutation = person.salutation || ''; // the default operator
 person.address.street // throws TypeError
 street = person.address && person.address.street // undefined
 					</code></pre>
-            </section>
-            <section>
-                <h2>Objects</h2>
-                <p>Values' update and properties' removal</p>
-                <pre><code data-trim class="javascript">
+                </section>
+                <section>
+                    <h2>Objects</h2>
+                    <p>Values' update and properties' removal</p>
+                    <pre><code data-trim class="javascript">
 var person = {
         firstName: 'John',
         lastName: 'Example',
@@ -170,23 +180,24 @@ person.age = 33;
 // delete
 delete person.age;
 					</code></pre>
-            </section>
-            <section>
-                <h2>Functions</h2>
-                <p>are objects</p>
-                <p>can be created with <i>function literals</i>:</p>
-                <pre><code data-trim class="javascript">
+                </section>
+                <section>
+                    <h2>Functions</h2>
+                    <p>are objects</p>
+                    <p>can be created with
+                        <i>function literals</i>:</p>
+                    <pre><code data-trim class="javascript">
 var add = function (a, b) {
     return a + b;
 };
 
 add(1, 2); // 3
 					</code></pre>
-            </section>
-            <section>
-                <h2>Functions</h2>
-                <p>stored as properties of objects...</p>
-                <pre><code data-trim class="javascript">
+                </section>
+                <section>
+                    <h2>Functions</h2>
+                    <p>stored as properties of objects...</p>
+                    <pre><code data-trim class="javascript">
 var person = {
     firstName: 'John',
     lastName: 'Example',
@@ -199,12 +210,14 @@ var person = {
 person.letMeIntroduceMyself(); // My name is John Example
 person.firstName // 'John' - no privacy
 					</code></pre>
-                <p>...are called <i>methods</i></p>
-            </section>
-            <section>
-                <h2>Scope</h2>
-                <p>is defined by functions, and no {} blocks</p>
-                <pre><code data-trim class="javascript">
+                    <p>...are called
+                        <i>methods</i>
+                    </p>
+                </section>
+                <section>
+                    <h2>Scope</h2>
+                    <p>is defined by functions, and no {} blocks</p>
+                    <pre><code data-trim class="javascript">
 var myFun = function (someInput) {
     var a = 1,
         b = 2,
@@ -220,11 +233,11 @@ var myFun = function (someInput) {
 };
 myFun();
 					</code></pre>
-            </section>
-            <section>
-                <h2>Closure</h2>
-                <p>enables a function to keep its creation context</p>
-                <pre><code data-trim class="javascript">
+                </section>
+                <section>
+                    <h2>Closure</h2>
+                    <p>enables a function to keep its creation context</p>
+                    <pre><code data-trim class="javascript">
 var myObjectFactory = function (param) {
         var value = 'Value';
 
@@ -238,13 +251,13 @@ var myObjectFactory = function (param) {
 myObject.theseAreMySecrets(); // value = Value, param = Param
 myObject.value; // undefined
 					</code></pre>
-                <p>...even if its lifetime is shorter than the function's one</p>
-            </section>
-            <section>
+                    <p>...even if its lifetime is shorter than the function's one</p>
+                </section>
                 <section>
-                    <h2>Module Pattern</h2>
-                    <p>makes use of function scope and closure</p>
-                    <pre><code data-trim class="javascript">
+                    <section>
+                        <h2>Module Pattern</h2>
+                        <p>makes use of function scope and closure</p>
+                        <pre><code data-trim class="javascript">
 var person = (function () {
     var details = {
         firstName: 'John',
@@ -263,21 +276,47 @@ var person = (function () {
 person.letMeIntroduceMyself(); // My name is John Example
 person.details; // undefined
 					</code></pre>
-                    <p>is widely used for programming <i>services</i> in <img class="middle" src="img/AngularJS-large.png" height="54" width="191">
-                    </p>
-                </section>
-                <section id="exercise-service">
-                    <h2>Exercise</h2>
-                    <ol>
-                        <li>Create a module <strong><code>todos</code></strong> using the module pattern.</li>
-                        <li>The <strong><code>todos</code></strong> module keeps its list of ToDos private.</li>
-                        <li>Each ToDo is made up of a <strong><code>title</code></strong> and a flag <strong><code>done</code></strong>.</li>
-                        <li>The <strong><code>todos</code></strong> module exposes the <strong><code>numberOfDoneToDos</code></strong> method.</li>
-                    </ol>
-                </section>
-                <section>
-                    <h2>Solution</h2>
-                    <pre><code data-trim class="javascript">
+                        <p>is widely used for programming
+                            <i>services</i>
+                            in
+                            <img class="middle" src="img/AngularJS-large.png" height="54" width="191">
+                        </p>
+                    </section>
+                    <section id="exercise-service">
+                        <h2>Exercise</h2>
+                        <ol>
+                            <li>Create a module
+                                <strong>
+                                    <code>todos</code>
+                                </strong>
+                                using the module pattern.</li>
+                            <li>The
+                                <strong>
+                                    <code>todos</code>
+                                </strong>
+                                module keeps its list of ToDos private.</li>
+                            <li>Each ToDo is made up of a
+                                <strong>
+                                    <code>title</code>
+                                </strong>
+                                and a flag
+                                <strong>
+                                    <code>done</code>
+                                </strong>.</li>
+                            <li>The
+                                <strong>
+                                    <code>todos</code>
+                                </strong>
+                                module exposes the
+                                <strong>
+                                    <code>numberOfDoneToDos</code>
+                                </strong>
+                                method.</li>
+                        </ol>
+                    </section>
+                    <!-- <section>
+                        <h2>Solution</h2>
+                        <pre><code data-trim class="javascript">
 var todos = (function () {
     var todos = [{title: 'Take part in the Rich Web Client School', done: true},
         {title: 'Do exercise', done: false}];
@@ -295,18 +334,24 @@ var todos = (function () {
     };
 })();
 					</code></pre>
+                    </section> -->
                 </section>
-            </section>
 
-            <section>
                 <section>
-                    <h2>Constructor function</h2>
-                    <p>is intended to be invoked with the <i>new</i> prefix <small>(forgetting it makes <i>this</i> bound to the global object!)</small>
-                    </p>
-                    <p>creates a new object with a hidden link to its <i>prototype</i>
-                    </p>
-                    <p>is kept in a variable with a capitalized name by convention</p>
-                    <pre><code data-trim class="javascript">
+                    <section>
+                        <h2>Constructor function</h2>
+                        <p>is intended to be invoked with the
+                            <i>new</i>
+                            prefix
+                            <small>(forgetting it makes
+                                <i>this</i>
+                                bound to the global object!)</small>
+                        </p>
+                        <p>creates a new object with a hidden link to its
+                            <i>prototype</i>
+                        </p>
+                        <p>is kept in a variable with a capitalized name by convention</p>
+                        <pre><code data-trim class="javascript">
 var Person = function () {
       this.firstName = 'John';
       this.lastName = 'Example';
@@ -321,20 +366,51 @@ johnExample = new Person();
 johnExample.letMeIntroduceMyself();  // My name is John Example
 johnExample.firstName; // 'John' - no privacy
 					</code></pre>
-                    <p>is used for defining <i>controllers</i> in <img class="middle" src="img/AngularJS-large.png" height="54" width="191">
-                    </p>
-                </section>
-                <section id="exercise-controller">
-                    <h2>Exercise</h2>
-                    <ol>
-                        <li>Define a constructor function <strong><code>ToDoCtrl</code></strong> passing it the <strong><code>todos</code></strong> module.</li>
-                        <li><strong><code>ToDoCtrl</code></strong> has a <strong><code>userName</code></strong> property and exposes the <strong><code>summary</code></strong> method.</li>
-                        <li>The <strong><code>summary</code></strong> method calls the <strong><code>todos</code></strong> module and prints a summary on the number of ToDos done by the user till now.</li>
-                    </ol>
-                </section>
-                <section>
-                    <h2>Solution 1</h2>
-                    <pre><code data-trim class="javascript">
+                        <p>is used for defining
+                            <i>controllers</i>
+                            in
+                            <img class="middle" src="img/AngularJS-large.png" height="54" width="191">
+                        </p>
+                    </section>
+                    <section id="exercise-controller">
+                        <h2>Exercise</h2>
+                        <ol>
+                            <li>Define a constructor function
+                                <strong>
+                                    <code>ToDoCtrl</code>
+                                </strong>
+                                passing it the
+                                <strong>
+                                    <code>todos</code>
+                                </strong>
+                                module.</li>
+                            <li>
+                                <strong>
+                                    <code>ToDoCtrl</code>
+                                </strong>
+                                has a
+                                <strong>
+                                    <code>userName</code>
+                                </strong>
+                                property and exposes the
+                                <strong>
+                                    <code>summary</code>
+                                </strong>
+                                method.</li>
+                            <li>The
+                                <strong>
+                                    <code>summary</code>
+                                </strong>
+                                method calls the
+                                <strong>
+                                    <code>todos</code>
+                                </strong>
+                                module and prints a summary on the number of ToDos done by the user till now.</li>
+                        </ol>
+                    </section>
+                    <!-- <section>
+                        <h2>Solution 1</h2>
+                        <pre><code data-trim class="javascript">
 var
     todos = {}, // from the previous exercise
     ToDoCtrl = function (todos) {
@@ -348,10 +424,10 @@ var
 
 myToDoCtrl.summary();
 					</code></pre>
-                </section>
-                <section>
-                    <h2>Solution 2</h2>
-                    <pre><code data-trim  class="javascript">
+                    </section> -->
+                    <!-- <section>
+                        <h2>Solution 2</h2>
+                        <pre><code data-trim  class="javascript">
 var
     todos = {}, // from the previous exercise
     ToDoCtrl = function (todos) {
@@ -367,12 +443,12 @@ ToDoCtrl.prototype.summary = function () {
 myToDoCtrl = new ToDoCtrl(todos);
 myToDoCtrl.summary();
 					</code></pre>
+                    </section> -->
                 </section>
-            </section>
 
-            <section>
-                <h2>Prototypal inheritance</h2>
-                <pre><code data-trim class="javascript">
+                <section>
+                    <h2>Prototypal inheritance</h2>
+                    <pre><code data-trim class="javascript">
 var create = function (from) {  // added to ECMAScript 5 as Object.create
       var F = function () {};
       F.prototype = from;
@@ -390,12 +466,15 @@ child.firstName = 'Joe';
 parent.letMeIntroduceMyself();  // My name is John Example
 child.letMeIntroduceMyself();  // My name is Joe Example
 					</code></pre>
-                <p>In <img class="middle" src="img/AngularJS-large.png" height="54" width="191"> <i>scopes</i> prototypically inherit from each other</p>
-            </section>
+                    <p>In
+                        <img class="middle" src="img/AngularJS-large.png" height="54" width="191">
+                        <i>scopes</i>
+                        prototypically inherit from each other</p>
+                </section>
 
-            <section>
-                <h2>Functional inheritance</h2>
-                <pre><code data-trim class="javascript">
+                <!-- <section>
+                    <h2>Functional inheritance</h2>
+                    <pre><code data-trim class="javascript">
 var parent = function (my) {
         var that = {},
             details = {
@@ -425,35 +504,36 @@ johnExample.letMeIntroduceMyself(); // My name is John Example
 joeExample.letMeIntroduceMyself(); // My name is Joe Example
 joeExample.firstName; // undefined
 					</code></pre>
-            </section>
-			
-			
-			<section>
-				<h2>Communication with server</h2>
-				<pre><code data-trim class="javascript">
+                </section> -->
+
+                <!-- <section>
+                    <h2>Communication with server</h2>
+                    <pre><code data-trim class="javascript">
 // create XMLHttpRequest object
 var xmlhttp = new XMLHttpRequest();
 
-// define a function to be called automatically each time 
+// define a function to be called automatically each time
 // when the readyState property changes
 xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 	  handleResponse(xmlhttp.responseText);
     }
 };
-            
-// open a request			
+
+// open a request
 xmlhttp.open('GET', 'url', true);
 
 // send a request
 xmlhttp.send();
 				</code></pre>
-				<small><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest</a></small>
-			</section>
-			
-			<section>
-				<h2>DOM manipulation</h2>
-				<pre><code data-trim class="javascript">
+                    <small>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest</a>
+                    </small>
+                </section> -->
+
+                <!-- <section>
+                    <h2>DOM manipulation</h2>
+                    <pre><code data-trim class="javascript">
 // create element
 var element = document.createElement(tagName);
 
@@ -475,139 +555,148 @@ otherElement.innterHTML = content;
 element = document.getElementById(id);
 elements = document.getElementsByClassName(names);
 				</code></pre>
-				<small><a href="http://callmenick.com/post/basics-javascript-dom-manipulation">http://callmenick.com/post/basics-javascript-dom-manipulation</a></small>
-			</section>
-			
-			<section>
-		<h2>Unit testing - tools</h2>
+                    <small>
+                        <a href="http://callmenick.com/post/basics-javascript-dom-manipulation">http://callmenick.com/post/basics-javascript-dom-manipulation</a>
+                    </small>
+                </section> -->
 
-		<ul>
-			<li><strong>Karma</strong> - tool used to spawn a web server which loads your application's source code and executes your tests.</li>
-			<li><strong>Jasmine</strong> - BDD framework for JavaScript, provides functions to help with structuring tests and making assertions.</li>
-		</ul>
-		<p><small><a href="https://docs.angularjs.org/guide/unit-testing">https://docs.angularjs.org/guide/unit-testing</a></small></p>
-	</section>
-	
-	<section>
-    <h2>Structuring tests</h2>
-      <pre><code class="javascript" contenteditable data-trim>
+                <section>
+                    <h2>Unit testing - tools</h2>
+
+                    <ul>
+                        <li>
+                            <strong>Karma</strong>
+                            - tool used to spawn a web server which loads your application's source code and executes your tests.</li>
+                        <li>
+                            <strong>Jasmine</strong>
+                            - BDD framework for JavaScript, provides functions to help with structuring tests and making assertions.</li>
+                    </ul>
+                    <p>
+                        <small>
+                            <a href="https://docs.angularjs.org/guide/unit-testing">https://docs.angularjs.org/guide/unit-testing</a>
+                        </small>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Structuring tests</h2>
+                    <pre><code class="javascript" contenteditable data-trim>
 describe('A suite', function() {
       it('contains spec with an expectation', function() {
         expect(true).toBe(true);
       });
 });
       </code></pre>
-</section>
+                </section>
 
-<section>
-		<h2>Karma configuration</h2>
-		  <pre class="fragment"><code class="javascript" contenteditable data-trim>
+                <section>
+                    <h2>Karma configuration</h2>
+                    <pre class="fragment"><code class="javascript" contenteditable data-trim>
 // install Karma
 npm install karma
 		  </code></pre>
-				<pre class="fragment"><code class="javascript" contenteditable data-trim>
-// install plugins
+                    <pre class="fragment"><code class="javascript" contenteditable data-trim>
+// install plugins and tools
 npm install karma-jasmine
 npm install karma-phantomjs-launcher
 npm install karma-chrome-launcher
+npm install jasmine-core
+npm install phantomjs-prebuilt
 		  </code></pre>
-		  <pre class="fragment"><code class="javascript" contenteditable data-trim>
+                    <pre class="fragment"><code class="javascript" contenteditable data-trim>
 // run Karma
 ./node_modules/karma/bin/karma start / init / run
 // alternative
 npm install -g karma-cli
 karma start / init / run
 		  </code></pre>
-		  <p><small><a href="http://karma-runner.github.io/0.13/intro/installation.html">http://karma-runner.github.io/0.13/intro/installation.html</a></small></p>
-	</section>
-	
-	<section>
-		<h2>Exercise</h2>
-		<ul>
-	
-<li>Download website template (for example Bootstrap template)</li>
-<li>Keep 2 options in the menu which will allow to switch between two dialogs</li>
-<li>Write and attach js script to your website</li>
-<li>Create js modules with module pattern for: calculator utilities, communication with server, page navigation</li>
-<li>Calculator module should allow to add, subtract, divide, multiply and calculate factorial</li>
-<li>Communication with server - use XMLHttpRequest to get data from JSON file and add results to page</li>
-<li>Navigation module should hide and show calculator / json data on menu buttons click</li>
-<li>Test calculator functions with Karma and Jasmine</li>
-</ul>
-		  </section>
+                    <p>
+                        <small>
+                            <a href="http://karma-runner.github.io/0.13/intro/installation.html">http://karma-runner.github.io/0.13/intro/installation.html</a>
+                        </small>
+                    </p>
+                </section>
 
+                <!-- <section>
+                    <h2>Exercise</h2>
+                    <ul>
 
-            <section>
-                <h2>Summary</h2>
-                <div>
-                    <img src="img/dcrockford-js.jpg">
-                </div>
-                <div>
-                    <small>http://www.flickr.com/photos/natekoechley/2853942919/</small>
-                </div>
-            </section>
+                        <li>Download website template (for example Bootstrap template)</li>
+                        <li>Keep 2 options in the menu which will allow to switch between two dialogs</li>
+                        <li>Write and attach js script to your website</li>
+                        <li>Create js modules with module pattern for: calculator utilities, communication with server, page navigation</li>
+                        <li>Calculator module should allow to add, subtract, divide, multiply and calculate factorial</li>
+                        <li>Communication with server - use XMLHttpRequest to get data from JSON file and add results to page</li>
+                        <li>Navigation module should hide and show calculator / json data on menu buttons click</li>
+                        <li>Test calculator functions with Karma and Jasmine</li>
+                    </ul>
+                </section> -->
+
+                <section>
+                    <h2>Summary</h2>
+                    <div>
+                        <img src="img/dcrockford-js.jpg">
+                    </div>
+                    <div>
+                        <small>http://www.flickr.com/photos/natekoechley/2853942919/</small>
+                    </div>
+                </section>
+
+            </div>
 
         </div>
+        <script src="base/reveal.js/lib/js/head.min.js"></script>
+        <script src="base/reveal.js/js/reveal.js"></script>
 
-    </div>
-    <script src="base/reveal.js/lib/js/head.min.js"></script>
-    <script src="base/reveal.js/js/reveal.js"></script>
+        <script>
+            // Full list of configuration options available at: https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                width: 980,
+                minScale: 1,
+                maxScale: 1,
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-    <script>
-        // Full list of configuration options available at:
-        // https://github.com/hakimel/reveal.js#configuration
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
-            center: true,
-            width: 980,
-            minScale: 1,
-            maxScale: 1,
-            transition: 'slide', // none/fade/slide/convex/concave/zoom
+                // Optional reveal.js plugins
+                dependencies: [
+                    {
+                        src: 'base/reveal.js/lib/js/classList.js',
+                        condition: function() {
+                            return !document.body.classList;
+                        }
+                    }, {
+                        src: 'base/reveal.js/plugin/markdown/marked.js',
+                        condition: function() {
+                            return !!document.querySelector('[data-markdown]');
+                        }
+                    }, {
+                        src: 'base/reveal.js/plugin/markdown/markdown.js',
+                        condition: function() {
+                            return !!document.querySelector('[data-markdown]');
+                        }
+                    }, {
+                        src: 'base/reveal.js/plugin/highlight/highlight.js',
+                        async: true,
+                        condition: function() {
+                            return !!document.querySelector('pre code');
+                        },
+                        callback: function() {
+                            hljs.initHighlightingOnLoad();
+                        }
+                    }, {
+                        src: 'base/reveal.js/plugin/zoom-js/zoom.js',
+                        async: true
+                    }, {
+                        src: 'base/reveal.js/plugin/notes/notes.js',
+                        async: true
+                    }
+                ]
+            });
+        </script>
 
-            // Optional reveal.js plugins
-            dependencies: [
-                {
-                    src: 'base/reveal.js/lib/js/classList.js',
-                    condition: function () {
-                        return !document.body.classList;
-                    }
-                },
-                {
-                    src: 'base/reveal.js/plugin/markdown/marked.js',
-                    condition: function () {
-                        return !!document.querySelector('[data-markdown]');
-                    }
-                },
-                {
-                    src: 'base/reveal.js/plugin/markdown/markdown.js',
-                    condition: function () {
-                        return !!document.querySelector('[data-markdown]');
-                    }
-                },
-                {
-                    src: 'base/reveal.js/plugin/highlight/highlight.js',
-                    async: true,
-                    condition: function () {
-                        return !!document.querySelector('pre code');
-                    },
-                    callback: function () {
-                        hljs.initHighlightingOnLoad();
-                    }
-                },
-                {
-                    src: 'base/reveal.js/plugin/zoom-js/zoom.js',
-                    async: true
-                },
-                {
-                    src: 'base/reveal.js/plugin/notes/notes.js',
-                    async: true
-                }
-        ]
-        });
-    </script>
-
-</body>
+    </body>
 
 </html>
